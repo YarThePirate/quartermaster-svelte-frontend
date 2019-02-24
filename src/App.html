@@ -1,0 +1,27 @@
+<style>
+	h1 {
+		color: purple;
+	}
+</style>
+
+<h1>Packing List</h1>
+<div class="items-container">
+  {#each categories as category}
+    <Category category={category}/>
+  {/each}
+</div>
+
+<script>
+  import Category from './Category.html';
+
+  export default {
+    components: {
+      Category
+    }/*,
+    methods: {
+      handler() {
+        alert("yo");
+      }
+    }*/
+  };
+</script>

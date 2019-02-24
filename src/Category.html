@@ -1,0 +1,22 @@
+<style>
+
+</style>
+
+<div class="item-category">
+  <h3 on:click="handler()">{category.name}</h3>
+  <ul>
+    {#each category.items as item}
+      <li>{item.name} : {item.remaining}</li>
+    {/each}
+  </ul>
+</div>
+
+<script>
+	export default {
+    methods: {
+      handler() {
+        alert("yuss");
+      }
+    }
+  };
+</script>
